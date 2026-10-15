@@ -1,0 +1,35 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.vcxproj.user
+
+# Build output (Visual Studio rebuilds these)
+x64/
+Debug/
+Release/
+GroceryShop/
+*.obj
+*.pdb
+*.ilk
+*.exe.metagen
+*.tlog
+*.log
+
+# Built installer (attach it to a GitHub "Release" instead of committing it)
+GroceryShop_Setup.exe
+installer_output/
+# copies of the program that the installer packs (keep only install.cmd, uninstall.cmd, *.sed)
+installer/*.exe
+installer/*.dll
+installer/*.png
+
+# Local temp files
+*.tmp
+
+# Videos are too big for GitHub (limit 100 MB) - upload the demo to YouTube instead
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
