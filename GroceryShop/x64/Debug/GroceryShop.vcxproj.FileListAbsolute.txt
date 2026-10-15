@@ -1,0 +1,14 @@
+C:\Users\chamith\Desktop\GroceryShop_Upload\GroceryShop\x64\Debug\GroceryShop.vcxproj.AssemblyReference.cache
+C:\Users\chamith\Desktop\GroceryShop_Upload\GroceryShop\x64\Debug\GroceryShop.MainForm.resources
+C:\Users\chamith\Desktop\GroceryShop_Upload\GroceryShop\x64\Debug\GroceryShop.ProductForm.resources
+C:\Users\chamith\Desktop\GroceryShop_Upload\GroceryShop\x64\Debug\GroceryShop.CustomerForm.resources
+C:\Users\chamith\Desktop\GroceryShop_Upload\GroceryShop\x64\Debug\GroceryShop.BillingForm.resources
+C:\Users\chamith\Desktop\GroceryShop_Upload\GroceryShop\x64\Debug\GroceryShop.LoginForm.resources
+C:\Users\chamith\Desktop\GroceryShop_Upload\GroceryShop\x64\Debug\GroceryShop.vcxproj.GenerateResource.cache
+G:\GroceryShop_Upload\GroceryShop\x64\Debug\GroceryShop.vcxproj.AssemblyReference.cache
+G:\GroceryShop_Upload\GroceryShop\x64\Debug\GroceryShop.MainForm.resources
+G:\GroceryShop_Upload\GroceryShop\x64\Debug\GroceryShop.ProductForm.resources
+G:\GroceryShop_Upload\GroceryShop\x64\Debug\GroceryShop.CustomerForm.resources
+G:\GroceryShop_Upload\GroceryShop\x64\Debug\GroceryShop.BillingForm.resources
+G:\GroceryShop_Upload\GroceryShop\x64\Debug\GroceryShop.LoginForm.resources
+G:\GroceryShop_Upload\GroceryShop\x64\Debug\GroceryShop.vcxproj.GenerateResource.cache

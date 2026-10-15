@@ -1,0 +1,137 @@
+  GroceryShop.MainForm.resources - Embedded, ContainedInManifestFile, 
+  GroceryShop.ProductForm.resources - Embedded, ContainedInManifestFile, 
+  GroceryShop.CustomerForm.resources - Embedded, ContainedInManifestFile, 
+  GroceryShop.BillingForm.resources - Embedded, ContainedInManifestFile, 
+  GroceryShop.LoginForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly GroceryShop, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Database: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Connect(String, String&): PrivateScope, Public, Static, HideBySig
+    Disconnect(): PrivateScope, Public, Static, HideBySig
+    Execute(String): PrivateScope, Public, Static, HideBySig
+    Query(String): PrivateScope, Public, Static, HideBySig
+    Esc(String): PrivateScope, Public, Static, HideBySig
+    Hash(String): PrivateScope, Public, Static, HideBySig
+    Login(String, String): PrivateScope, Public, Static, HideBySig
+Class Theme: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    UiScale(): PrivateScope, Public, Static, HideBySig
+    Background(): PrivateScope, Public, Static, HideBySig
+    Primary(): PrivateScope, Public, Static, HideBySig
+    PrimaryHot(): PrivateScope, Public, Static, HideBySig
+    Danger(): PrivateScope, Public, Static, HideBySig
+    Neutral(): PrivateScope, Public, Static, HideBySig
+    Text(): PrivateScope, Public, Static, HideBySig
+    Apply(Control): PrivateScope, Public, Static, HideBySig
+Class UI: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Lbl(String, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Txt(Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Btn(String, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Combo(Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Grid(Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Warn(String): PrivateScope, Public, Static, HideBySig
+    Info(String): PrivateScope, Public, Static, HideBySig
+Class GroceryShop.LoginForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Item: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(Int32, System.String, Double, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Quantity 'get set' : 
+    Double Price 'get set' : 
+    System.String Name 'get set' : 
+    Int32 Id   'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Price(): PrivateScope, Public, HideBySig, SpecialName
+    set_Price(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Quantity(): PrivateScope, Public, HideBySig, SpecialName
+    set_Quantity(Int32): PrivateScope, Public, HideBySig, SpecialName
+    GetCategory(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CalculateTotal(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Describe(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class GroceryItem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Item
+    Void .ctor(Int32, System.String, Double, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetCategory(): PrivateScope, Public, Virtual, HideBySig
+    CalculateTotal(Int32): PrivateScope, Public, Virtual, HideBySig
+    Describe(): PrivateScope, Public, Virtual, HideBySig
+Class BeverageItem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Item
+    Void .ctor(Int32, System.String, Double, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetCategory(): PrivateScope, Public, Virtual, HideBySig
+    CalculateTotal(Int32): PrivateScope, Public, Virtual, HideBySig
+    Describe(): PrivateScope, Public, Virtual, HideBySig
+Class HouseholdItem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Item
+    Void .ctor(Int32, System.String, Double, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetCategory(): PrivateScope, Public, Virtual, HideBySig
+    CalculateTotal(Int32): PrivateScope, Public, Virtual, HideBySig
+    Describe(): PrivateScope, Public, Virtual, HideBySig
+Class ItemFactory: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Create(String, Int32, String, Double, Int32): PrivateScope, Public, Static, HideBySig
+Class Person: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(Int32, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Phone 'get set' : 
+    System.String Name 'get set' : 
+    Int32 Id   'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Phone(): PrivateScope, Public, HideBySig, SpecialName
+    set_Phone(String): PrivateScope, Public, HideBySig, SpecialName
+    GetMembership(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetDiscountRate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Describe(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class Customer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Person
+    Void .ctor(Int32, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetMembership(): PrivateScope, Public, Virtual, HideBySig
+    GetDiscountRate(): PrivateScope, Public, Virtual, HideBySig
+Class MemberCustomer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Person
+    Void .ctor(Int32, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetMembership(): PrivateScope, Public, Virtual, HideBySig
+    GetDiscountRate(): PrivateScope, Public, Virtual, HideBySig
+Class PersonFactory: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Create(String, Int32, String, String): PrivateScope, Public, Static, HideBySig
+Class GroceryShop.ProductForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GroceryShop.CustomerForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GroceryShop.BillingForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GroceryShop.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
